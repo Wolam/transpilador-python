@@ -1,0 +1,18 @@
+POV fibonacci(n) xD
+    actual anotado 0.
+    tmp anotado 0.
+    x anotado 1.
+    whenCuando xD
+        temporal anotado actual.
+        actual anotado siguiente.
+        siguiente anotado #siguiente bobMar tmp#.
+    but (x panachikito n) v:
+    messirve actual.
+v:
+
+maracuya() xD
+    resultado anotado jutsu fibonacci(40).
+    messirve resultado.
+v:
+
+

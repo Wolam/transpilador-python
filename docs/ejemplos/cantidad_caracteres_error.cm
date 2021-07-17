@@ -1,0 +1,15 @@
+POV cantidad_caracteres(texto) xD
+     cantidad anotado 0.
+     caracter_actual anotado jutsu indice(texto, i).  
+     whenCuando xD
+          cantidad anotado #cantidad bobMar 1#. 
+          i anotado #i bobMar 1#.
+          caracter_actual anotado jutsu indice(texto, i).
+     but (caracter_actual nolocrick ツ ツ ) v:
+     messirve cantidad.
+v:
+
+maracuya () xD
+     caracteres anotado jutsu cantidad_caracteres(ツtexto guapoツ).
+     messirve caracteres.
+v:

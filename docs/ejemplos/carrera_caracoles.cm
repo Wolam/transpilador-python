@@ -1,0 +1,123 @@
+muchoTexto: muestra la pista al usuario en terminal
+POV mostrar_pista(carril_1,carril_2,carril_3)xD
+    _ anotado jutsu aber(carril_1).
+    _ anotado jutsu aber(carril_2).
+    _ anotado jutsu aber(carril_3).
+v:
+
+muchoTexto: se encarga de acortar una palabra hasta una posición
+muchoTexto: en pocas palabras un substring xD
+POV troncho(palabra,n,m)xD
+    indice_fin anotado jutsu nel(palabra).
+    i anotado 0.
+    tmp anotado ツツ.
+    whenCuando xD
+        caracter_actual anotado jutsu curcuma(palabra,i).
+        siuuu( i panapotente n aja i chikito m)xD
+            tmp anotado jutsu duren(tmp,caracter_actual).
+        v:
+        i anotado #i bobMar 1#.
+    but (i nolocrick indice_fin) v:
+
+    messirve tmp.
+
+v:
+
+muchoTexto: modifica el carril del caracol
+muchoTexto: une el texto de lo que está atrás del caracol, con el caracol y con lo que le falta por recorrer
+POV modificar(carril,posicion_caracol)xD
+    muchoTexto: sleep o tiempo de espera en moverse cada caracol
+    tiempo_milis anotado 0;2.
+    _ anotado jutsu amimir(tiempo_milis).
+
+    fin anotado jutsu nel(carril).
+    inicio anotado #posicion_caracol bobMar 3#. 
+
+    muchoTexto: como ven este lenguaje necesita una gran cantidad de asignaciones
+    muchoTexto: por lo que no lo hace muy legible y además extenso
+    indice_jupa anotado #posicion_caracol bobMar 1#.
+    caparazon anotado jutsu curcuma(carril,posicion_caracol).
+    jupon anotado jutsu curcuma(carril,indice_jupa).
+    caracol anotado jutsu duren(caparazon,jupon).
+    inicio_carril anotado 0.
+    recorrido anotado jutsu troncho(carril,inicio_carril,posicion_caracol).
+    segmento_carril anotado ツ_ツ.
+    recorrido anotado jutsu duren(recorrido,segmento_carril).
+    por_recorrer anotado jutsu troncho(carril,inicio,fin).
+    tmp anotado jutsu duren(caracol,por_recorrer).
+    carril_modificado anotado jutsu duren(recorrido,tmp).
+    messirve carril_modificado.
+v:
+
+muchoTexto: verifica si algún caracol se encuentra en la última posición
+muchoTexto: si es así, quiere decir que ya ganó
+POV verificar_gane(carril)xD
+    indice_fin anotado jutsu nel(carril).
+    indice_fin anotado #indice_fin bobStar 3#.
+    meta anotado jutsu curcuma(carril,indice_fin).
+    siuuu (meta panas ツŸツ)xD
+      messirve SIUA.  
+    v:
+    messirve NOUA.
+
+v:
+
+muchoTexto: función principal de C-Mamuth
+maracuya()xD
+  carril_1 anotado ツ@Ÿ_______________________________________________________________________________________________________________________l^lツ.
+  carril_2 anotado ツ@Ÿ_______________________________________________________________________________________________________________________l^lツ.
+  carril_3 anotado ツ@Ÿ_______________________________________________________________________________________________________________________l^lツ.
+
+  posicion_caracol_1 anotado 0.
+  posicion_caracol_2 anotado 0.
+  posicion_caracol_3 anotado 0.
+
+  a anotado 0.
+  b anotado 2.
+
+  ganador_caracol_1 anotado NOUA.
+  ganador_caracol_2 anotado NOUA.
+  ganador_caracol_3 anotado NOUA.
+
+  no_hay_ganador anotado SIUA.
+
+muchoTexto: ciclo que se encarga de verificar si algun caracol ya ganó, 
+muchoTexto: o realizar su movimiento.
+muchoTexto: se genera un random entre 0, 1 y 2 para conocer que caracol se mueve
+  whenCuando xD
+        _ anotado jutsu f_en_el_chat().
+        _ anotado jutsu mostrar_pista(carril_1,carril_2,carril_3).
+
+        movimiento anotado jutsu lolazo(a,b).
+
+        siuuu (movimiento panas 0)xD
+            carril_1 anotado jutsu modificar(carril_1,posicion_caracol_1).
+            posicion_caracol_1 anotado #posicion_caracol_1 bobMar 1#.
+        v:
+        siuuu (movimiento panas 1)xD
+            carril_2 anotado jutsu modificar(carril_2,posicion_caracol_2).
+            posicion_caracol_2 anotado #posicion_caracol_2 bobMar 1#.
+        v:
+        siuuu (movimiento panas 2)xD
+            carril_3 anotado jutsu modificar(carril_3,posicion_caracol_3).
+            posicion_caracol_3 anotado #posicion_caracol_3 bobMar 1#.
+        v:
+        
+        ganador_caracol_1 anotado jutsu verificar_gane(carril_1).
+        ganador_caracol_2 anotado jutsu verificar_gane(carril_2).
+        ganador_caracol_3 anotado jutsu verificar_gane(carril_3).
+        
+        muchoTexto: queda un poco feo, pero aquí es donde se verifica, si algún caracol ya ganó
+        siuuu(ganador_caracol_1 nolocrick ganador_caracol_2 ayno ganador_caracol_1 nolocrick ganador_caracol_3)xD
+            no_hay_ganador anotado NOUA.
+        v:
+        
+  but (no_hay_ganador nolocrick NOUA) v:
+  
+  tiempo_milis anotado 0;2.
+  _ anotado jutsu amimir(tiempo_milis).
+  msj_salida anotado ツ\n !!!!!Tenemos un ganador!!!!!ツ.
+  _ anotado jutsu aber(msj_salida).
+  
+  messirve 0.
+v:
